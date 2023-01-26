@@ -137,6 +137,15 @@ a {
   margin-top: 4rem;
   
 }
+.motdLabel2{
+  font-family: 'Montserrat';
+  letter-spacing: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  margin-top: 8rem;
+  
+}
 .theMeal{
   display: grid;
   width: 80%;
