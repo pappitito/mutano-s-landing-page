@@ -126,6 +126,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 4rem;
 }
 .motdLabel{
   font-family: 'Montserrat';
@@ -133,7 +134,7 @@ a {
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 4rem;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   
 }
 .theMeal{
