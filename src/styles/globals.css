@@ -1,0 +1,633 @@
+@import url('https://fonts.cdnfonts.com/css/baron-neue');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/bungasai');
+:root {
+ 
+  }
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(79, 131, 122);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+.logo{
+  font-size: 3.2rem;
+  font-family:  'Bungasai', sans-serif;
+  font-weight: 600;
+  width: 100%;
+  
+}
+.menu:hover{
+  cursor: pointer;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0rem;
+  background-color: #0d0d0d ;
+  position: fixed;
+  top:0;
+  z-index: 1000;
+  
+}
+.tops{
+  
+  font-family: 'Montserrat';
+  margin-left: 2rem;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  width: 8.5rem;
+  transition: all 0.5s;
+  
+  
+}
+.tops:hover{
+  border-style: solid;
+  border-top-width: 0rem;
+  border-right-width: 0rem;
+  border-left-width: 0rem;
+  border-bottom-width: 0.25rem;
+  border-color: rgb(149, 147, 147);
+}
+.rightSide{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.menu{
+  display: none;
+}
+#menushow{
+  display: flex;
+}
+.largeMenu{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.secondMenu{
+  display: none;
+}
+#menushow{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.motd{
+  background-image: linear-gradient(176deg, #0d0d0d 80%, rgb(79, 131, 122) 80%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.motdLabel{
+  font-family: 'Montserrat';
+  letter-spacing: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  margin-top: 1.5rem;
+  
+}
+.theMeal{
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.motdflex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  padding: 1rem;
+}
+.foodName{
+  font-size: 8rem;
+  letter-spacing: -0.3rem;
+  background: -webkit-linear-gradient(left, rgb(245, 102, 31), rgb(240, 210, 12) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  
+}
+.leftmotd{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+.leftmotd>h4{
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: rgb(189, 187, 187);
+  letter-spacing: -0.1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+span{
+  width: 2rem
+}
+
+.placeOrd{
+  background-color: white;
+ 
+  border: none;
+  color: #0d0d0d;
+  font-family: 'Montserrat';
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  margin-bottom: 10rem;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.motdImg{
+  position: relative;
+  animation-name: fadeIn, enlarge;
+  animation-duration: 1.5s, 1.5s;
+  animation-iteration-count: 1, infinite;
+  animation-direction: normal, alternate;
+}
+@keyframes enlarge {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.06);}
+  
+}
+.dishes>h2{
+  font-family: 'Montserrat';
+  letter-spacing: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+.dishes{
+  width: 100%;
+  background-color: rgb(79, 131, 122);
+  font-family: 'Montserrat' ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.gridwrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+.dishcard{
+  
+  display: flex;
+  padding: 4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:  rgb(52, 86, 81) ;
+  border-radius: 0.5rem;
+  
+  
+  
+}
+.dishcard:hover{
+  cursor: pointer;
+  background-color: rgb(45, 76, 70)
+}
+.dishImg{
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.dishgrid{
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3rem;
+  margin-bottom: 2rem;
+  
+}
+.dishcard>h3{
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+.dishcard>p{
+  line-height: 2rem;
+}
+.see{
+  background-color: white;
+ 
+  border: none;
+  color: #0d0d0d;
+  font-family: 'Montserrat';
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+}
+.see:hover, .placeOrd:hover{
+  background-color: rgb(213, 211, 211);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mtc{
+  width: 100%;
+  background-image: linear-gradient(-4deg,  #0d0d0d 80%, rgb(79, 131, 122)  80% );
+  font-family: 'Montserrat' ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 2rem;
+  position: relative;
+}
+.mtclabel{
+  font-family: 'Montserrat';
+  letter-spacing: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+  margin-top: 10rem;
+  text-align: center;
+}
+.mtcwrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.dishImg2{
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.chefImg{
+  display: flex;
+  justify-content: center;
+}
+
+.mtcgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  max-width: 70%;
+  
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  
+}
+.info>h3{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.info>p{
+  font-size: 1.2rem;
+  line-height: 2rem;
+  
+}
+.social{
+  background-color: white;
+  border-radius: 50%;
+  border: solid;
+  border-color: white;
+  border-width: 0.2rem;
+}
+.swrap{
+  display: flex;
+  margin-top: 5rem;
+  position: absolute;
+  bottom: 3%;
+  right: 2%
+}
+
+
+
+
+
+@media(max-width: 25rem){
+  .logo{
+    font-size: 2.7rem;
+    margin-right: 2rem;
+  }
+  .theMeal{
+    grid-template-columns: 1fr;
+
+  }
+  .motdLabel{
+    font-size: 1.2rem;
+  }
+  .foodName{
+    font-size: 4.5rem;
+    letter-spacing: -0.2rem;
+  }
+  .motdImg{
+    width: 290px;
+    height: 290px;
+    margin-bottom: 4rem;
+  }
+  .leftmotd{
+    align-items: center;
+    text-align: center;
+   
+  }
+  .placeOrd{
+    margin-bottom: 3rem;
+  }
+  .rightSide{
+    align-items: baseline;
+  }
+  .menu{
+    display: flex;
+    margin-top: 1.2rem;
+  }
+  .secondMenu{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 52%;
+    height: 100vh;
+    background-color: rgb(26, 54, 49);
+    top: 4.8rem;
+    right:-100%;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 100;
+  }
+ 
+  #menushow:checked ~ .secondMenu{
+    right: 0;
+} 
+  .largeMenu{
+    display: none;
+  }
+  .tops{
+    margin-bottom: 1.5rem;
+  }
+
+
+
+
+  .dishgrid{
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-bottom: -4rem;
+    
+  }
+  .dishcard{
+    margin-bottom: 3rem;
+    transform: scale(0.9);
+  }
+
+  .mtcgrid{
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .dishImg2{
+    width: 200px;
+    height: 200px;
+  }
+  .info{
+    transform: scale(0.9);
+  }
+  
+}
+@media(min-width: 25rem) and (max-width: 37rem){
+
+  .logo{
+    font-size: 2.9rem;
+    margin-right: 1rem;
+  }
+
+  .theMeal{
+    grid-template-columns: 1fr;
+
+  }
+  .motdLabel{
+    font-size: 1.2rem;
+  }
+  .foodName{
+    font-size: 6rem;
+  }
+  .motdImg{
+    width: 380px;
+    height: 380px;
+    margin-bottom: 4rem;
+  }
+  .leftmotd{
+    align-items: center;
+    text-align: center;
+   
+  }
+  .placeOrd{
+    margin-bottom: 5rem;
+  }
+  .rightSide{
+    align-items: baseline;
+  }
+  .menu{
+    display: flex;
+    margin-top: 1.2rem;
+  }
+  .menu:hover{
+    cursor: pointer;
+  }
+  .secondMenu{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 52%;
+    height: 100vh;
+    background-color: rgb(26, 54, 49);
+    top: 4.8rem;
+    right:-100%;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 100;
+  }
+ 
+  #menushow:checked ~ .secondMenu{
+    right: 0;
+} 
+
+  
+ 
+  .largeMenu{
+    display: none;
+  }
+  .tops{
+    margin-bottom: 1.5rem;
+  }
+
+
+  .dishgrid{
+    grid-template-columns: 1fr;
+    margin-bottom: -4rem;
+  }
+  .dishcard{
+    margin-bottom: 3rem;
+  }
+  .mtcgrid{
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+  .dishImg2{
+    width: 270px;
+    height: 270px;
+  }
+
+}
+@media(min-width: 37rem) and (max-width: 60rem){
+  .theMeal{
+    grid-template-columns: 1fr;
+
+  }
+  .motdLabel{
+    font-size: 1.2rem;
+  }
+  .foodName{
+    font-size: 7rem;
+  }
+  .motdImg{
+    width: 500px;
+    height: 500px;
+    margin-bottom: 3rem;
+  }
+  .leftmotd{
+    align-items: center;
+    text-align: center;
+   
+  }
+  .rightSide{
+    align-items: baseline;
+  }
+  .menu{
+    display: flex;
+    margin-top: 1.2rem;
+  }
+  .secondMenu{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 52%;
+    height: 100vh;
+    background-color: rgb(26, 54, 49);
+    top: 4.8rem;
+    right:-100%;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 100;
+  }
+ 
+  #menushow:checked ~ .secondMenu{
+    right: 0;
+} 
+  .largeMenu{
+    display: none;
+  }
+  .tops{
+    margin-bottom: 1.5rem;
+  }
+
+
+
+  .dishgrid{
+    grid-template-columns: 1fr;
+    margin-bottom: -4rem;
+  }
+  .dishcard{
+    margin-bottom: 3rem;
+  }
+  .mtcgrid{
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+  .dishImg2{
+    width: 300px;
+    height: 300px;
+  }
+
+
+}
