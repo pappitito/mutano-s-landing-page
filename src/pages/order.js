@@ -3,7 +3,7 @@ function Order(){
     return(
         <div>
             <Header/>
-             <h2 className='motdLabel'>Orders page</h2>
+             <h2 className='motdLabel2'>Orders page</h2>
              <div className='info'>
           
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
