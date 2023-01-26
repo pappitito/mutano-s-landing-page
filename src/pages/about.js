@@ -3,7 +3,7 @@ function About(){
     return(
        <div>
             <Header/>
-             <h2 className='motdLabel'>About us page</h2>
+             <h2 className='motdLabel2'>About us page</h2>
              <div className='info'>
           
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
