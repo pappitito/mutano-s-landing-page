@@ -3,7 +3,7 @@ function Locations(){
     return(
        <div>
             <Header/>
-             <h2 className='motdLabel'>Locations Page</h2>
+             <h2 className='motdLabel2'>Locations Page</h2>
              <div className='info'>
           
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
